@@ -26,18 +26,34 @@ const LANG = {
     now_4:"Open to opportunities",
     tl_title:"Timeline", tl_intro:"My journey — education, milestones & achievements.",
     tl_cur:"Current",
-    tl1_h:"Software Engineering · 5th Semester", tl1_org:"Universidad",
-    tl1_d:"Deepening backend architecture, databases, and software design patterns. Actively competing in academic events and hackathons.",
-    tl2_h:"Hackathon Tech Tiger Code 2025", tl2_org:"External Competition",
-    tl2_d:"Certificate of participation competing to build innovative tech solutions under time pressure.",
-    tl3_h:"Roles & Permissions System", tl3_org:"Personal Project",
-    tl3_d:"Full role-based access control in Java — users, roles and granular permission management.",
-    tl4_h:"Tech Fair — UTEG",
-    tl4_d:"Certificate of participation showcasing academic and practical software development skills.",
-    tl5_h:"Peluqueria Canina · CRUD App", tl5_org:"University Project",
-    tl5_d:"First full CRUD desktop app for a canine grooming salon using Java and MySQL.",
-    tl6_h:"Started Software Engineering", tl6_org:"Universidad · Semester 1",
-    tl6_d:"First lines of code, first algorithms, first taste of building software.",
+    tl_sw_title:"Software Engineering", tl_sw_org:"Universidad — Ongoing",
+    tl_sw_d:"Studying backend architecture, databases, design patterns and software engineering principles. Actively participating in academic events and competitions.",
+    tl_javaweb_title:"Java Web con JSP y JPA",
+    tl_javaweb_d:"Certificate of completion for the Java Web with JSP and JPA course — covering full-stack Java web development with persistence layers.",
+    tl_pasantia_title:"Professional Internship — SOSYSTEC",
+    tl_pasantia_d:"Successfully completed 240 hours of professional internship at SOSYSTEC, gaining real-world experience in software development and enterprise technology solutions.",
+    tl_arduino_title:"Introduction to Arduino",
+    tl_arduino_d:"Certificate of completion for the Introduction to Arduino course, exploring embedded systems, hardware programming and IoT fundamentals.",
+    tl_dl_title:"Introduction to Deep Learning",
+    tl_dl_d:"Certificate of completion for the Introduction to Deep Learning course, covering neural networks, machine learning fundamentals and AI concepts.",
+    tl_poo_title:"OOP with Java",
+    tl_poo_d:"Certificate of completion for the OOP with Java course — mastering classes, inheritance, polymorphism, encapsulation and design principles.",
+    tl_hack_title:"Hackathon Tech Tiger Code 2025", tl_hack_org:"External Competition",
+    tl_hack_d:"Certificate of participation in the Tech Tiger Code 2025 Hackathon, competing to build innovative solutions under time pressure.",
+    tl_bd_title:"Relational Databases with MySQL",
+    tl_bd_d:"Certificate of completion covering SQL, schema design, queries and database management fundamentals.",
+    tl_git_title:"Introduction to Git & GitHub",
+    tl_git_d:"Certificate of completion — version control, branching, pull requests and collaborative workflows.",
+    tl_roles_title:"Roles & Permissions System", tl_roles_org:"Personal Project",
+    tl_roles_d:"Full role-based access control system in Java — users, roles and granular permission management with structured backend architecture.",
+    tl_uteg_title:"Tech Fair — UTEG",
+    tl_uteg_d:"Certificate of participation in the Technology Fair at UTEG, showcasing academic and practical software development skills.",
+    tl_crud_title:"Peluqueria Canina · CRUD App", tl_crud_org:"University Project",
+    tl_crud_d:"First full CRUD desktop app for a canine grooming salon using Java and MySQL.",
+    tl_javabeg_title:"Java para Principiantes",
+    tl_javabeg_d:"Certificate of completion for the Java for Beginners course — the foundation of my Java journey. Syntax, data types, control flow and basic OOP.",
+    tl_start_title:"Started Software Engineering", tl_start_org:"Universidad — Semester 1",
+    tl_start_d:"First lines of code, first algorithms, first taste of building software.",
     certs_title:"Certifications", certs_earned:"Earned", certs_progress:"In Progress",
     c1:"Relational Databases", c2:"Tech Fair Participation — UTEG",
     c3:"Arduino", c4:"Deep Learning", c5:"Hackathon Tech Tiger Code 2025",
@@ -82,18 +98,34 @@ const LANG = {
     now_4:"Abierto a oportunidades",
     tl_title:"Trayectoria", tl_intro:"Mi recorrido — educación, hitos y logros.",
     tl_cur:"Actual",
-    tl1_h:"Ingeniería en Software · 5to Semestre", tl1_org:"Universidad",
-    tl1_d:"Profundizando en arquitectura backend, bases de datos y patrones de diseño. Participando en eventos y hackathons.",
-    tl2_h:"Hackathon Tech Tiger Code 2025", tl2_org:"Competencia externa",
-    tl2_d:"Certificado de participación compitiendo para crear soluciones tecnológicas bajo presión de tiempo.",
-    tl3_h:"Sistema de Roles y Permisos", tl3_org:"Proyecto Personal",
-    tl3_d:"Sistema completo de control de acceso basado en roles en Java — usuarios, roles y permisos granulares.",
-    tl4_h:"Feria Tecnológica — UTEG",
-    tl4_d:"Certificado de participación en la feria tecnológica de la UTEG, demostrando habilidades en desarrollo de software.",
-    tl5_h:"Peluquería Canina · CRUD", tl5_org:"Proyecto Universitario",
-    tl5_d:"Primera aplicación CRUD de escritorio para una peluquería canina usando Java y MySQL.",
-    tl6_h:"Inicio en Ingeniería en Software", tl6_org:"Universidad · Semestre 1",
-    tl6_d:"Primeras líneas de código, primeros algoritmos, primer contacto con el desarrollo de software.",
+    tl_sw_title:"Ingeniería en Software", tl_sw_org:"Universidad — En curso",
+    tl_sw_d:"Estudiando arquitectura backend, bases de datos, patrones de diseño y principios de ingeniería de software. Participando activamente en eventos académicos y competencias.",
+    tl_javaweb_title:"Java Web con JSP y JPA",
+    tl_javaweb_d:"Certificado de finalización del curso Java Web con JSP y JPA — desarrollo web fullstack con Java y capas de persistencia.",
+    tl_pasantia_title:"Prácticas Preprofesionales — SOSYSTEC",
+    tl_pasantia_d:"Completé satisfactoriamente 240 horas de prácticas preprofesionales en SOSYSTEC, adquiriendo experiencia real en desarrollo de software y soluciones tecnológicas empresariales.",
+    tl_arduino_title:"Introducción a Arduino",
+    tl_arduino_d:"Certificado de finalización del curso de Arduino — sistemas embebidos, programación de hardware y fundamentos de IoT. Miami Business Technological University.",
+    tl_dl_title:"Introducción a Deep Learning",
+    tl_dl_d:"Certificado de finalización del curso de Deep Learning — redes neuronales, fundamentos de machine learning y conceptos de inteligencia artificial. MBTU.",
+    tl_poo_title:"Programación Orientada a Objetos con Java",
+    tl_poo_d:"Certificado de finalización del curso de POO con Java — clases, herencia, polimorfismo, encapsulamiento y principios de diseño.",
+    tl_hack_title:"Hackathon Tech Tiger Code 2025", tl_hack_org:"Competencia externa",
+    tl_hack_d:"Certificado de participación en el Hackathon Tech Tiger Code 2025, compitiendo para crear soluciones tecnológicas bajo presión de tiempo.",
+    tl_bd_title:"Bases de Datos Relacionales con MySQL",
+    tl_bd_d:"Certificado de finalización — SQL, diseño de esquemas, consultas y fundamentos de gestión de bases de datos.",
+    tl_git_title:"Introducción a Git y GitHub",
+    tl_git_d:"Certificado de finalización — control de versiones, ramas, pull requests y flujos de trabajo colaborativos.",
+    tl_roles_title:"Sistema de Roles y Permisos", tl_roles_org:"Proyecto Personal",
+    tl_roles_d:"Sistema completo de control de acceso basado en roles en Java — usuarios, roles y permisos granulares con arquitectura backend estructurada.",
+    tl_uteg_title:"Feria Tecnológica — UTEG",
+    tl_uteg_d:"Certificado de participación en la feria tecnológica de la UTEG, demostrando habilidades académicas y prácticas en desarrollo de software.",
+    tl_crud_title:"Peluquería Canina · CRUD", tl_crud_org:"Proyecto Universitario",
+    tl_crud_d:"Primera aplicación CRUD de escritorio para una peluquería canina usando Java y MySQL.",
+    tl_javabeg_title:"Java para Principiantes",
+    tl_javabeg_d:"Certificado de finalización del curso Java para Principiantes — la base de mi camino con Java. Sintaxis, tipos de datos, flujo de control y POO básica.",
+    tl_start_title:"Inicio en Ingeniería en Software", tl_start_org:"Universidad — Semestre 1",
+    tl_start_d:"Primeras líneas de código, primeros algoritmos, primer contacto con el desarrollo de software.",
     certs_title:"Certificaciones", certs_earned:"Obtenidas", certs_progress:"En Progreso",
     c1:"Bases de Datos Relacionales", c2:"Participación Feria Tecnológica — UTEG",
     c3:"Arduino", c4:"Deep Learning", c5:"Hackathon Tech Tiger Code 2025",
@@ -497,35 +529,28 @@ if(certSec) new IntersectionObserver(e=>{
     const ghSec = document.querySelector("#github");
     if (!ghSec) return;
 
-    // Observe so we fetch on scroll into view
-    new IntersectionObserver(async (entries) => {
-      if (!entries[0].isIntersecting) return;
-
+    async function doFetch() {
       try {
-        // User profile
         const profileRes = await fetch(`${BASE}/users/${USER}`);
         const profile    = await profileRes.json();
 
-        // Count total stars
         const reposRes = await fetch(`${BASE}/users/${USER}/repos?per_page=100&sort=updated`);
         const repos    = await reposRes.json();
         const totalStars = Array.isArray(repos)
-          ? repos.reduce((s, r) => s + r.stargazers_count, 0)
-          : 0;
+          ? repos.reduce((s, r) => s + r.stargazers_count, 0) : 0;
 
-        // Render stats
         renderStat("ghRepos",     profile.public_repos,  "gh_repos_lbl");
         renderStat("ghFollowers", profile.followers,      "gh_followers_lbl");
         renderStat("ghFollowing", profile.following,      "gh_following_lbl");
         renderStat("ghStars",     totalStars,             "gh_stars_lbl");
 
-        // Render repos (sorted by stars then updated)
         if (Array.isArray(repos)) {
-          const sorted = [...repos].sort((a,b) => b.stargazers_count - a.stargazers_count || new Date(b.updated_at) - new Date(a.updated_at));
+          const sorted = [...repos].sort((a,b) =>
+            b.stargazers_count - a.stargazers_count ||
+            new Date(b.updated_at) - new Date(a.updated_at));
           renderRepos(sorted);
         }
 
-        // Events for commits
         const eventsRes = await fetch(`${BASE}/users/${USER}/events/public?per_page=30`);
         const events    = await eventsRes.json();
         if (Array.isArray(events)) renderCommits(events);
@@ -534,14 +559,28 @@ if(certSec) new IntersectionObserver(e=>{
         const d = LANG[lang];
         ["ghRepos","ghFollowers","ghFollowing","ghStars"].forEach(id => {
           const c = el(id);
-          if (c) c.innerHTML = `<span class="gh-stat-label">—</span>`;
+          if (c) c.innerHTML = `<span class="gh-stat-num">—</span><span class="gh-stat-label">Error</span>`;
         });
         const rl = el("ghRepoList");
         const cl = el("ghCommitList");
         if (rl) rl.innerHTML = `<p class="gh-error">${d.gh_error}</p>`;
         if (cl) cl.innerHTML = `<p class="gh-error">${d.gh_error}</p>`;
       }
-    }, { threshold: 0.1 }).observe(ghSec);
+    }
+
+    // If already visible (standalone page), fetch immediately
+    const rect = ghSec.getBoundingClientRect();
+    if (rect.top < window.innerHeight) {
+      doFetch();
+    } else {
+      let fetched = false;
+      new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting && !fetched) {
+          fetched = true;
+          doFetch();
+        }
+      }, { threshold: 0.1 }).observe(ghSec);
+    }
   }
 
   fetchGitHub();
@@ -569,9 +608,9 @@ if(certSec) new IntersectionObserver(e=>{
       { cls:"t-out-resp", t:"  skills       — My tech stack" },
       { cls:"t-out-resp", t:"  projects     — My projects" },
       { cls:"t-out-resp", t:"  contact      — Get in touch" },
-      { cls:"t-out-resp", t:"  coffee       — Essential resource" },
-      { cls:"t-out-resp", t:"  dragon       — Unleash the beast" },
-      { cls:"t-out-resp", t:"  hack         — Elite mode" },
+      { cls:"t-out-resp", t:"  coffee       — ☕ Essential resource" },
+      { cls:"t-out-resp", t:"  dragon       — 🐉 Unleash the beast" },
+      { cls:"t-out-resp", t:"  hack         — 💻 Elite mode" },
       { cls:"t-out-resp", t:"  sudo         — Try your luck" },
       { cls:"t-out-resp", t:"  matrix       — Take the red pill" },
       { cls:"t-out-resp", t:"  joke         — Random dev joke" },
@@ -592,15 +631,15 @@ if(certSec) new IntersectionObserver(e=>{
     ],
 
     projects: () => [
-      { cls:"t-out-resp", t:"LoginValidator      — Java + Swing" },
-      { cls:"t-out-resp", t:"RolesPermissions    — Java + RBAC" },
-      { cls:"t-out-resp", t:"PeluqueriaCanina    — Java + MySQL" },
+      { cls:"t-out-resp", t:"📁 LoginValidator      — Java + Swing" },
+      { cls:"t-out-resp", t:"📁 RolesPermissions    — Java + RBAC" },
+      { cls:"t-out-resp", t:"📁 PeluqueriaCanina    — Java + MySQL" },
     ],
 
     contact: () => [
-      { cls:"t-out-resp", t:"edwarddelcastillo4@gmail.com" },
-      { cls:"t-out-resp", t:"github.com/24kgolden" },
-      { cls:"t-out-resp", t:"x.com/666_serpico" },
+      { cls:"t-out-resp", t:"📧 edwarddelcastillo4@gmail.com" },
+      { cls:"t-out-resp", t:"🐙 github.com/24kgolden" },
+      { cls:"t-out-resp", t:"🐦 x.com/666_serpico" },
     ],
 
     coffee: () => [
@@ -610,16 +649,16 @@ if(certSec) new IntersectionObserver(e=>{
       { cls:"t-out-special", t:"     |      |]" },
       { cls:"t-out-special", t:"     \\      /" },
       { cls:"t-out-special", t:"      `----'" },
-      { cls:"t-out-warn",    t:"Coffee loaded. Ready to code." },
+      { cls:"t-out-warn",    t:"  ☕  Coffee loaded. Ready to code." },
     ],
 
     dragon: () => [
       { cls:"t-out-special", t:"      /\\_____/\\" },
       { cls:"t-out-special", t:"  /\\  / o   o \\" },
-      { cls:"t-out-special", t:" //\\\\ \\  w  /  " },
+      { cls:"t-out-special", t:" //\\\\ \\  w  /  🔥" },
       { cls:"t-out-special", t:" \\  / /     \\" },
       { cls:"t-out-special", t:"  \\/  \\  ^  /" },
-      { cls:"t-out-resp",    t:" The dragon awakens... 00ff88 forever." },
+      { cls:"t-out-resp",    t:"  🐉 The dragon awakens... 00ff88 forever." },
     ],
 
     hack: () => [
@@ -633,23 +672,23 @@ if(certSec) new IntersectionObserver(e=>{
 
     sudo: () => [
       { cls:"t-out-err",  t:"  sudo: permission denied" },
-      { cls:"t-out-resp", t:"  (nice try though )" },
+      { cls:"t-out-resp", t:"  (nice try though 😄)" },
     ],
 
     matrix: () => [
       { cls:"t-out-special", t:"  Wake up, Neo..." },
       { cls:"t-out-special", t:"  The Matrix has you..." },
       { cls:"t-out-special", t:"  01000101 01100100 01110111 01100001 01110010" },
-      { cls:"t-out-warn",    t:"  Follow the white rabbit. " },
+      { cls:"t-out-warn",    t:"  Follow the white rabbit. 🐇" },
     ],
 
     joke: () => {
       const jokes = [
-        ["Why do programmers prefer dark mode?", "Because light attracts bugs! "],
+        ["Why do programmers prefer dark mode?", "Because light attracts bugs! 🐛"],
         ["How many programmers does it take to change a lightbulb?", "None. It's a hardware problem."],
-        ["A SQL query walks into a bar...", "...walks up to two tables and asks: 'Can I JOIN you?'"],
-        ["Why did Java break up with JavaScript?", "Because it had too many undefined issues."],
-        ["What's a developer's favourite place?", "The foo bar."],
+        ["A SQL query walks into a bar...", "...walks up to two tables and asks: 'Can I JOIN you?' 😂"],
+        ["Why did Java break up with JavaScript?", "Because it had too many undefined issues. 💔"],
+        ["What's a developer's favourite place?", "The foo bar. 🍺"],
       ];
       const [q, a] = jokes[Math.floor(Math.random() * jokes.length)];
       return [
@@ -662,12 +701,12 @@ if(certSec) new IntersectionObserver(e=>{
 
     "rm -rf /": () => [
       { cls:"t-out-err",  t:"  rm: WARNING: deleting entire filesystem" },
-      { cls:"t-out-err",  t:"  rm: just kidding nothing was harmed" },
+      { cls:"t-out-err",  t:"  rm: just kidding 😅 nothing was harmed" },
     ],
 
     "git push": () => [
       { cls:"t-out-special", t:"  Pushing to origin/main..." },
-      { cls:"t-out-warn",    t:"  fatal: rejected — pushing to production on a Friday?" },
+      { cls:"t-out-warn",    t:"  fatal: rejected — pushing to production on a Friday? 😱" },
     ],
 
     "git blame": () => [
@@ -675,7 +714,7 @@ if(certSec) new IntersectionObserver(e=>{
     ],
 
     "hello world": () => [
-      { cls:"t-out-special", t:'  System.out.println("Hello, World!");' },
+      { cls:"t-out-special", t:'  System.out.println("Hello, World! 👋");' },
     ],
 
     ls: () => [
