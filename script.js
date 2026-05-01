@@ -569,9 +569,9 @@ if(certSec) new IntersectionObserver(e=>{
       { cls:"t-out-resp", t:"  skills       — My tech stack" },
       { cls:"t-out-resp", t:"  projects     — My projects" },
       { cls:"t-out-resp", t:"  contact      — Get in touch" },
-      { cls:"t-out-resp", t:"  coffee       — ☕ Essential resource" },
-      { cls:"t-out-resp", t:"  dragon       — 🐉 Unleash the beast" },
-      { cls:"t-out-resp", t:"  hack         — 💻 Elite mode" },
+      { cls:"t-out-resp", t:"  coffee       — Essential resource" },
+      { cls:"t-out-resp", t:"  dragon       — Unleash the beast" },
+      { cls:"t-out-resp", t:"  hack         — Elite mode" },
       { cls:"t-out-resp", t:"  sudo         — Try your luck" },
       { cls:"t-out-resp", t:"  matrix       — Take the red pill" },
       { cls:"t-out-resp", t:"  joke         — Random dev joke" },
@@ -592,15 +592,15 @@ if(certSec) new IntersectionObserver(e=>{
     ],
 
     projects: () => [
-      { cls:"t-out-resp", t:"📁 LoginValidator      — Java + Swing" },
-      { cls:"t-out-resp", t:"📁 RolesPermissions    — Java + RBAC" },
-      { cls:"t-out-resp", t:"📁 PeluqueriaCanina    — Java + MySQL" },
+      { cls:"t-out-resp", t:"LoginValidator      — Java + Swing" },
+      { cls:"t-out-resp", t:"RolesPermissions    — Java + RBAC" },
+      { cls:"t-out-resp", t:"PeluqueriaCanina    — Java + MySQL" },
     ],
 
     contact: () => [
-      { cls:"t-out-resp", t:"📧 edwarddelcastillo4@gmail.com" },
-      { cls:"t-out-resp", t:"🐙 github.com/24kgolden" },
-      { cls:"t-out-resp", t:"🐦 x.com/666_serpico" },
+      { cls:"t-out-resp", t:"edwarddelcastillo4@gmail.com" },
+      { cls:"t-out-resp", t:"github.com/24kgolden" },
+      { cls:"t-out-resp", t:"x.com/666_serpico" },
     ],
 
     coffee: () => [
@@ -610,16 +610,16 @@ if(certSec) new IntersectionObserver(e=>{
       { cls:"t-out-special", t:"     |      |]" },
       { cls:"t-out-special", t:"     \\      /" },
       { cls:"t-out-special", t:"      `----'" },
-      { cls:"t-out-warn",    t:"  ☕  Coffee loaded. Ready to code." },
+      { cls:"t-out-warn",    t:"Coffee loaded. Ready to code." },
     ],
 
     dragon: () => [
       { cls:"t-out-special", t:"      /\\_____/\\" },
       { cls:"t-out-special", t:"  /\\  / o   o \\" },
-      { cls:"t-out-special", t:" //\\\\ \\  w  /  🔥" },
+      { cls:"t-out-special", t:" //\\\\ \\  w  /  " },
       { cls:"t-out-special", t:" \\  / /     \\" },
       { cls:"t-out-special", t:"  \\/  \\  ^  /" },
-      { cls:"t-out-resp",    t:"  🐉 The dragon awakens... 00ff88 forever." },
+      { cls:"t-out-resp",    t:" The dragon awakens... 00ff88 forever." },
     ],
 
     hack: () => [
@@ -633,23 +633,23 @@ if(certSec) new IntersectionObserver(e=>{
 
     sudo: () => [
       { cls:"t-out-err",  t:"  sudo: permission denied" },
-      { cls:"t-out-resp", t:"  (nice try though 😄)" },
+      { cls:"t-out-resp", t:"  (nice try though )" },
     ],
 
     matrix: () => [
       { cls:"t-out-special", t:"  Wake up, Neo..." },
       { cls:"t-out-special", t:"  The Matrix has you..." },
       { cls:"t-out-special", t:"  01000101 01100100 01110111 01100001 01110010" },
-      { cls:"t-out-warn",    t:"  Follow the white rabbit. 🐇" },
+      { cls:"t-out-warn",    t:"  Follow the white rabbit. " },
     ],
 
     joke: () => {
       const jokes = [
-        ["Why do programmers prefer dark mode?", "Because light attracts bugs! 🐛"],
+        ["Why do programmers prefer dark mode?", "Because light attracts bugs! "],
         ["How many programmers does it take to change a lightbulb?", "None. It's a hardware problem."],
-        ["A SQL query walks into a bar...", "...walks up to two tables and asks: 'Can I JOIN you?' 😂"],
-        ["Why did Java break up with JavaScript?", "Because it had too many undefined issues. 💔"],
-        ["What's a developer's favourite place?", "The foo bar. 🍺"],
+        ["A SQL query walks into a bar...", "...walks up to two tables and asks: 'Can I JOIN you?'"],
+        ["Why did Java break up with JavaScript?", "Because it had too many undefined issues."],
+        ["What's a developer's favourite place?", "The foo bar."],
       ];
       const [q, a] = jokes[Math.floor(Math.random() * jokes.length)];
       return [
@@ -662,12 +662,12 @@ if(certSec) new IntersectionObserver(e=>{
 
     "rm -rf /": () => [
       { cls:"t-out-err",  t:"  rm: WARNING: deleting entire filesystem" },
-      { cls:"t-out-err",  t:"  rm: just kidding 😅 nothing was harmed" },
+      { cls:"t-out-err",  t:"  rm: just kidding nothing was harmed" },
     ],
 
     "git push": () => [
       { cls:"t-out-special", t:"  Pushing to origin/main..." },
-      { cls:"t-out-warn",    t:"  fatal: rejected — pushing to production on a Friday? 😱" },
+      { cls:"t-out-warn",    t:"  fatal: rejected — pushing to production on a Friday?" },
     ],
 
     "git blame": () => [
@@ -675,7 +675,7 @@ if(certSec) new IntersectionObserver(e=>{
     ],
 
     "hello world": () => [
-      { cls:"t-out-special", t:'  System.out.println("Hello, World! 👋");' },
+      { cls:"t-out-special", t:'  System.out.println("Hello, World!");' },
     ],
 
     ls: () => [
