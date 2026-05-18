@@ -454,7 +454,7 @@ body::after {
 .ptags span { font-family:var(--fm); font-size:var(--t-xs); color:var(--g); border:1px solid rgba(0,255,136,.18); padding:3px 10px; letter-spacing:.8px; }
 .snip-badge { font-family:var(--fm); font-size:var(--t-xs); color:var(--gr); border:1px solid var(--br); padding:2px 8px; letter-spacing:1px; flex-shrink:0; }
 
-/* Live code */
+/* ── Mini terminal (compartida por hero y Java Snippet) ── */
 .mini-terminal { background:#050505; border:1px solid rgba(0,255,136,.18); border-radius:6px; overflow:hidden; flex:1; box-shadow:0 0 24px rgba(0,255,136,.05), 0 8px 24px rgba(0,0,0,.5); }
 .mini-terminal .terminal-head { padding:9px 14px; background:#0e0e0e; border-bottom:1px solid rgba(0,255,136,.08); }
 .mini-terminal .terminal-body { padding:14px 16px 16px; }
@@ -462,107 +462,58 @@ body::after {
 .lcursor { display:inline-block; color:var(--g); animation:blink .9s step-end infinite; text-shadow:0 0 8px rgba(0,255,136,.8); margin-left:1px; font-size:.85em; vertical-align:text-bottom; }
 .kw { color:#7ee8a2; } .cl { color:#00ff88; } .fn { color:#80d8ff; } .str { color:#ffd740; }
 
-/* ── Java Snippet card ── */
+/* ── Java Snippet card layout ── */
 .pcard--code {
   display: grid;
   grid-template-columns: 1fr 1.8fr;
-  min-height: 220px;
+  min-height: 240px;
+  /* anulamos flex heredado de .pcard */
+  flex-direction: unset;
+  height: auto;
 }
 
 .code-left {
-  padding: 24px;
+  padding: var(--sp3);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  border-right: 1px solid var(--br);
 }
 
 .code-left h3 {
-  font-size: 16px;
-  font-weight: 500;
+  font-family: var(--fd);
+  font-size: .84rem;
+  font-weight: 700;
+  letter-spacing: 1px;
   margin-bottom: 8px;
 }
 
 .code-left p {
-  font-size: 13px;
-  color: var(--color-muted, #8b949e); /* ajusta a tu variable de color secundario */
-  line-height: 1.5;
+  font-size: var(--t-sm);
+  color: var(--gr-l);
+  line-height: 1.7;
   flex: 1;
-  margin-bottom: 16px;
+  margin-bottom: var(--sp3);
 }
 
 .code-right {
-  padding: 16px;
-  background: rgba(0, 0, 0, 0.2);
+  padding: var(--sp3);
   display: flex;
   align-items: stretch;
 }
 
-/* ── Terminal ── */
-.mini-terminal {
-  width: 100%;
-  background: #0d1117;
-  border-radius: 8px;
-  border: 1px solid #30363d;
-  overflow: hidden;
+/* La terminal dentro de .code-right ocupa todo el alto disponible */
+.code-right .mini-terminal {
+  flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-.terminal-head {
-  background: #161b22;
-  border-bottom: 1px solid #30363d;
-  padding: 9px 14px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.t-btn {
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  display: inline-block;
-}
-.t-red    { background: #ff5f57; }
-.t-yellow { background: #febc2e; }
-.t-green  { background: #28c840; }
-
-.t-label {
-  font-size: 11px;
-  color: #8b949e;
-  font-family: 'Share Tech Mono', monospace;
-  margin-left: 6px;
-}
-
-.terminal-body {
-  padding: 14px 18px;
+.code-right .mini-terminal .terminal-body {
   flex: 1;
+  padding: 14px 16px;
   display: flex;
   align-items: flex-start;
-}
-
-.codebox {
-  font-family: 'Share Tech Mono', monospace;
-  font-size: 13px;
-  line-height: 1.7;
-  white-space: pre;
-  color: #c9d1d9;
-  background: transparent;
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
-.lcursor {
-  display: inline-block;
-  animation: blink 1s step-end infinite;
-  color: #3fb950;
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50%       { opacity: 0; }
 }
 
 /* List view */
@@ -735,24 +686,18 @@ body::after {
   .tl-row { grid-template-columns:110px 20px 1fr; }
   .pcard-img, .pcard-icon { height:180px; }
 
-  /* Java Snippet — columna en tablet */
+  /* Java Snippet — apilado en tablet */
   .pcard--code {
     grid-column: span 2;
-    flex-direction: column;
-  }
-  .pcard--code .pcard-body {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
   }
-  .pcard--code .mini-terminal {
-    grid-column: 1;
-    grid-row: 2;
-    min-height: 200px;
-    height: 200px;
+  .code-left {
+    border-right: none;
+    border-bottom: 1px solid var(--br);
+    padding-bottom: var(--sp3);
   }
-  .pcard--code .ptags {
-    grid-column: 1;
-    grid-row: 3;
+  .code-right .mini-terminal {
+    min-height: 220px;
   }
 }
 
@@ -788,10 +733,14 @@ body::after {
   .footer-links { gap:var(--sp2); flex-wrap:wrap; }
   .footer-bot { flex-direction:column; align-items:flex-start; }
 
-  /* Java Snippet — una sola columna en móvil */
-  .pcard--code { grid-column: span 1; flex-direction: column; }
-  .pcard--code .pcard-body { grid-template-columns: 1fr; }
-  .pcard--code .mini-terminal { grid-column: 1; grid-row: 2; height: 180px; min-height: 180px; }
+  /* Java Snippet — una columna en móvil */
+  .pcard--code {
+    grid-column: span 1;
+    grid-template-columns: 1fr;
+  }
+  .code-right .mini-terminal {
+    min-height: 180px;
+  }
 }
 
 /* ───────────────────────────────────────────
